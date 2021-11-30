@@ -149,4 +149,5 @@ nav a {
 .about-li {
   align-self: center;
   margin-right: 1vh;
+  display: flex;
 }
