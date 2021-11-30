@@ -93,6 +93,7 @@ nav a {
   -moz-animation: fadeIn linear 1s;
   -o-animation: fadeIn linear 1s;
   -ms-animation: fadeIn linear 1s;
+  transform: translateY(30%);
 }
 
 @keyframes fadeIn {
