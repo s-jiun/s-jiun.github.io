@@ -99,11 +99,11 @@ nav a {
 }
 
 .fade-in-text {
-  animation: fadeIn linear 7s;
-  -webkit-animation: fadeIn linear 7s;
-  -moz-animation: fadeIn linear 7s;
-  -o-animation: fadeIn linear 7s;
-  -ms-animation: fadeIn linear 7s;
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
 }
 
 @keyframes fadeIn {
@@ -149,4 +149,8 @@ nav a {
   100% {
     opacity: 1;
   }
+}
+
+.About {
+  grid-template-columns: 1fr 1fr;
 }
