@@ -160,6 +160,7 @@ nav a {
 .align-right {
   float: right;
   margin-left: 20px;
+  align-self: end;
 }
 
 .slide-in {
