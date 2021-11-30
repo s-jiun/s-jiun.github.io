@@ -11,10 +11,7 @@
     <title>Jiun's Portfolio</title>
 </head>
 <body>
-    <div class="head-wrapper">
-        <h3>Portfolio</h3>
-    </div>
-    <div class="container">
+    <div class="container" style="margin-top: 5vh;">
         <div class="head-wrapper">
             <h3 style="text-align: center;">
                 Hi, I'm Jiun
@@ -26,5 +23,34 @@
             </div>
         </div>
     </div>
+    <nav id="navigation">
+        <ul>
+            <li class="logo"><a href="#">LOST.</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Maps</a></li>
+        </ul>
+    </nav>
+
+
+
+    <script>
+        const nav = document.querySelector('#navigation');
+        const topOfNav = nav.offsetTop;
+        function fixNav() {
+          if(window.scrollY >= topOfNav) {
+            document.body.style.paddingTop = nav.offsetHeight + 'px';
+            document.body.classList.add('fixed-nav');
+          }
+          else {
+            document.body.style.paddingTop = 0;
+            document.body.classList.remove('fixed-nav');
+          }
+        }
+      
+        window.addEventListener('scroll', fixNav);
+      </script>
 </body>
 </html>
