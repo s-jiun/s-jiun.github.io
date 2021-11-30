@@ -145,3 +145,8 @@ nav a {
   display: flex;
   flex-direction: column;
 }
+
+.about-li {
+  align-self: center;
+  margin-right: 1vh;
+}
