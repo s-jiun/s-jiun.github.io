@@ -1,5 +1,5 @@
 * {
-  font-family: "Noto Serif KR", serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .container {
@@ -94,7 +94,6 @@ nav a {
   transition: transform 0.5s;
 }
 
-/* 추가된 부분 */
 .fixed-nav .site-wrap {
   transform: scale(1);
 }
