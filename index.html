@@ -22,7 +22,7 @@
             </h3>
             <div class="heading-wrapper" style="text-align: center;">
                 <h1>Studying to be a</h1>
-                <h1>Full Stack Developer</h1>
+                <h1>Back-End Stack Developer</h1>
                 <br />
                 <br />
             </div>
@@ -57,6 +57,20 @@
                     <a href="https://blog.naver.com/747miriyam"><h4>https://blog.naver.com/747miriyam</h4></a>
                 </div>
             </div>
+            <br />
+            <br />
+
+            <h1><a name="About">Project 1. OurPlant</a></h1>
+            <br />
+            <h2>" 나와 지구의 환경을 위한 방법 "</h2>
+            <p>
+                대한민국의 모든 가구에 나무를 한 그루씩만 심어도, 서울숲의 50배에 달하는 나무를 심는 것과 같습니다. 
+                식물을 인테리어에 활용함으로써 인공적인 오브제의 활용도를 낮추고 새집증후군 예방에 도움을 주는 플랜테리어. 
+                최근 인테리어 시장의 성장, 코로나 블루 등으로 인해 플랜테리어와 반려 식물에 대한 관심도 높아지고 있습니다. 
+                하지만 현재 서비스되고 있는 인테리어 커뮤니티들은 식물 정보를 모아보기 어렵거나 플랜테리어 사진만을 따로 모아 볼 수가 없는 등 플랜테리어 정보를 모아보기에 불편함이 많습니다. 
+                저희 OurPlant는 이러한 불편함을 해소하고자 개발된 서비스입니다. 오로지 플랜테리어에 특화된 서비스로서 환경친화적인 라이프스타일을 추구하는 전국의 모든 가드너들을 응원합니다.
+            </p>
+            <img src="./images/OurPlant1.png" class="align-left slide-in" width="50vh">
         </div>
     </div>
 
@@ -75,6 +89,44 @@
         }
       
         window.addEventListener('scroll', fixNav);
+
+        function debounce(func, wait = 20, immediate = true) {
+      var timeout;
+      return function() {
+        var context = this, args = arguments;
+        var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    };
+
+    const sliderImages = document.querySelectorAll('.slide-in');
+
+    function checkSlide(e) {
+      sliderImages.forEach(sliderImage => {
+
+        const SlideInAt = (window.scrollY + window.innerHeight);
+
+        const imageBottom = sliderImage.offsetTop + sliderImage.height;
+        const isHalfShown = SlideInAt > sliderImage.offsetTop;
+        const isNotScrolledPast = window.scrollY < imageBottom;
+
+        if (isHalfShown && isNotScrolledPast) {
+          sliderImage.classList.add('active');
+        }
+        else {
+          sliderImage.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', debounce(checkSlide));
+
       </script>
 </body>
 </html>
