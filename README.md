@@ -1,3 +1,3 @@
 # s-jiun.github.io
 /
-/＼
+/\
