@@ -1,263 +1,648 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;900&family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Jiun's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
-<body>
-    <div class="head-wrapper">
-        <h4>Project Portfolio</h4>
+
+<body id="top" class="ss-preload">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
-    <div class="container" style="margin-top: 5vh;">
-        <div class="head-wrapper fade-in-text">
-            <h3 class="text-top" style="text-align: center;">
-                Hi, I'm Jiun
-                <span role="img" aria-label="Emoji">👋</span>
-            </h3>
-            <div class="heading-wrapper" style="text-align: center;">
-                <h1>Studying to be a</h1>
-                <h1>Back-End Developer</h1>
-                <br />
-                <br />
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+        
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>I'm Jiun Seo.</h1>
+
+                    <h3>
+                    I'm a <span>backend developer</span> and <span>team leader</span> trying to write high-readable code and
+                    effective product with high quality for every users. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+                    and learn more <a class="smoothscroll" href="#about">about me</a>!
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="https://www.instagram.com/ss_jiun/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://github.com/s-jiun"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://blog.naver.com/747miriyam"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/user-06.jpg" alt="">
+            </div>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>
+                    Hello, I'm Seo Jiun, a student who is interested in developing services that contribute to improving the public interest of society. 
+                    In the meantime, I led various application development projects and worked as a development PO and full stack developer. 
+                    In addition, the medical aids sharing platform for the disabled and the elderly, "CareShare", was awarded at the 23rd E-Daily Economic Universiade Contest. 
+                    Now I’m currently focusing on studies as a Presidential Scientific Scholarship student.
+                </p>
+                <p>
+                    I am interested in writing highly readable code. 
+                    Of course, I still lack a lot of skills, but I always try to consider the readability of the code as well as the development of  
+                    it’s functions while writing the code. I had time to refactor the code regularly with my team members while working on the project.
+                    Also, I think it's important to get feedback and develop myself through it. No matter how simple a project or plan is, I always get feedback, 
+                    and I feel great pleasure when I find new perspectives that I haven't considered.
+                </p>
+
+                <hr>
+
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
+    
+                        <p>
+                        Jiun Seo <br>
+                        Sungshin Women's University <br>
+                        <a href="tel:+821075333498">+82 010-7533-3498</a> <br>
+                        <a href="mailto:jiun48562@gmail.com">jiun48562@gmail.com</a>
+                        </p>
+                        
+                    </div>
+                    <div class="column w-1000-stack">
+                        <a href="#0" class="btn btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Sungshin Women's University</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Computer Engineering</span> 
+                            <span class="resume-block__header-date">
+                                March 2020 ~ Current
+                            </span>
+                        </p>
+                    </div>
+                    <p>
+                    GPA: 4.33/4.50
+                    </p>
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+                    <strong>Language</strong>
+                    <p>
+                    JAVA, Python, C, C++, Javascript, HTML, CSS
+                    </p>
+                    <strong>Frontend</strong>
+                    <p>
+                    React
+                    </p>
+                    <strong>Backend</strong>
+                    <p>
+                        AWS(EC2, RDS, SES, Lambda, S3, Route53), GCP(Compute Engine, GKE), NginX, Apache, Node.Js, 
+                        Django, Springboot, Docker, Jenkins, Kubernetes, Firebase, ReactNative
+                    </p>
+                    <strong>Database</strong>
+                    <p>
+                        MySQL
+                    </p>
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Awards & Scholarship</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Presidential Scientific Scholarship</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Engineering Part</span> 
+                            <span class="resume-block__header-date">
+                                December 2022 ~ Current
+                            </span>
+                        </p>
+                    </div>
+
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">23rd E-Daily Economic Universiade</h4>
+                        <p class="resume-block__header-meta">
+                            <span>KG Inicis CEO Award (2nd Prize)</span> 
+                            <span class="resume-block__header-date">
+                                November 2021
+                            </span>
+                        </p>
+                    </div>
+
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Sungshin Women's University Scholarship</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Academic Scholarship</span> 
+                            <span class="resume-block__header-date">
+                                2021 Spring
+                            </span>
+                        </p>
+                    </div>
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Experience</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Sungshin Women's University</h4>
+                        <p class="resume-block__header-meta">
+                            <span>CI/CD Pipeline Automation Project Team Member</span> 
+                            <span class="resume-block__header-date">
+                                September 2022 ~ December 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        This project was conducted while I was taking the "Open-Source Software" 
+                        course in the fall semester of 2022 at Sungshin Women's University, 
+                        and is not a project focused on web services, but on building CI/CD pipelines. 
+                        The web service functions as a simple chatting service that has developed by using Node.Js and Socket.io.
+                        The server has utilized GCP and the pipeline has developed by using Docker, Jenkins, and Kubernetes.
+                    </p>
+
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">TAVE 9th</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Spring Boot Study Club Member</span> 
+                            <span class="resume-block__header-date">
+                                March 2022 ~ July 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        I learned the overall contents about SpringBoot while studying as the 9th TAVE. 
+                        In the first half of the activity, I participated in a study club about SpringBoot, 
+                        and in the second half, I developed Senapul, an Android app based on what I have learned. 
+                        You can check what I studied during TAVE on
+                        <a href="https://blog.naver.com/PostList.naver?blogId=747miriyam&from=postList&categoryNo=13">my blog</a>.
+                    </p>
+
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">NVIDIA Deep Learning Institute</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Certificate 'Basis of Deep Learning' Course</span> 
+                            <span class="resume-block__header-date">
+                                April 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        I completed the "Basis of Deep Learning" course of the 
+                        NVIDIA Deep Learning Institute during the 9th TAVE.
+                        After taking the lecture and learning the overall contents of deep learning, 
+                        I learned about training methods, CNN models, and data augmentation of neural networks. 
+                        And we finally completed the course after passing a test that training a model to demonstrate high accuracy.
+                    </p>
+
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Pirogramming 16th</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Club Management Team Member</span> 
+                            <span class="resume-block__header-date">
+                                September 2021 ~ January 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        After completing the Pirogramming 15th, I worked as Education Supporting Team at Pirogramming 16th. 
+                        My job was to participate in the establishment of the 16th curriculum and create programming tasks, 
+                        and to feedback the Python coding test. Also, I taught how to utilize Slack and Jira as project collaboration tools.
+                        When I was working on the management team, the task I created was "Design Facebook ERD based on MySQL." 
+                        Because there are so many features on Facebook in reality, we organized the task to design <a href="https://www.erdcloud.com/d/SNv5MuHKDwFFsGowc">ERD</a> with only basic features.
+                    </p>
+
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Pirogramming 15th</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Web Application Development Project Manager</span> 
+                            <span class="resume-block__header-date">
+                                June 2021 ~ August 2021
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        I have learned the overall contents of web development at Pirogramming, the web development association club. 
+                        There are two toy projects that have been done through the club activity.
+                    </p>
+                    <strong>Mini Game Project (with Python, Crawling)</strong>
+                    <p>
+                        It consists of four mini games, and I developed a game that guesses the singer's name 
+                        by looking at the title of the song. With BeautifulSoup, the program randomly presented the title of the song 
+                        and singer's name on the online music chart. We also imported the SequenceMatcher function 
+                        so that if the answer is more than 30% similar to the answer you guessed, it will be recognized as correct.
+                    </p>
+                    <strong>Card Game project (with Django)</strong>
+                    <p>
+                        You can sign up for the game through Naver Login, Google Login, or General Login, and if you log in, you can bet on other users. 
+                        Five cards from random numbers between 1 and 10 are shown and one of them will be selected. If the opponent chooses a card according to the game, 
+                        the result of the game can be checked. The person with the larger number of cards selected may win, or the person with the smaller number may win, 
+                        which is unknown because the program determines at random. The winner gets as many points as the number of his cards, 
+                        and the opponent loses as many points as the number of his cards.
+                    </p>
+
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Coding World News</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Technology News Editor</span> 
+                            <span class="resume-block__header-date">
+                                December 2020 ~ February 2021
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        I worked as an editor of CODING WORLD NEWS for 3 months and wrote articles introducing new technologies and trends in IT and technology. 
+                        Before I started studying development, it was an activity that I started to broaden my insight into the IT field, and as a result, 
+                        I think I achieved my desired purpose.
+                    </p>
+                    <p>
+                        Here is the list of articles that I have written.
+                    </p>
+                    <li>
+                        <a href="https://www.codingworldnews.com/news/articleView.html?idxno=2220">
+                            The Era of Remote Charging Beyond Wireless Charging, Xiaomi's 'Mi Air Charge'
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.codingworldnews.com/news/articleView.html?idxno=2099">
+                            SK Telecom's Challenge to Next-Generation of Mobility Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.codingworldnews.com/news/articleView.html?idxno=2034">
+                            Which New Technology is Going to be the Leader of the Future Industry? - Unique Items in CES 2021
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.codingworldnews.com/news/articleView.html?idxno=1981">
+                            Diamond Battery, an Endless Battery Without Charging
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.codingworldnews.com/news/articleView.html?idxno=1926">
+                            Coupang's Unstoppable Entry Into the OTT Market
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.codingworldnews.com/news/articleView.html?idxno=1896">
+                            R, a Powerful Language Which is Emerging in Statistical Programming
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.codingworldnews.com/news/articleView.html?idxno=1869">
+                            Prospects of the Holographic Display Market in 5G Era
+                        </a>
+                    </li>
+                    <p>
+
+                    </p>
+                    <p>
+                        The article about holographic displays has become the base of "Dosent Robot with Holographic Display Technology”, 
+                        my proposal at the 22nd E-Daily Economic Universiade. And I was able to enter to the final with that proposal.
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>A Few Of My Latest Creations</h3>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <nav id="navigation" style="height: 7vh;">
-            <ul style="height: 7vh;">
-                <li class="logo"><a href="#">Seo Jiun</a></li>
-                <li><a href="#">Main</a></li>
-                <li><a href="#About">Info</a></li>
-                <li><a href="#Project1">Project 1</a></li>
-                <li><a href="#Project2">Project 2</a></li>
-            </ul>
-        </nav>
-        <br />
-        <br />
-        <div class="inner-container">
-            <h1><a name="About">Personal Info.</a></h1>
-            <br />
-            <div style="display: flex;">
-                <div class="about-li" style="margin-right: 3vh;">
-                    <span class="about-li"><img src="./images/gmail-logo.png" width=20vh></span>
-                    <span><h4>jiun48562@gmail.com</h4></span>
+
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="images/portfolio/ourplant.jpg" 
+                         srcset="images/portfolio/ourplant.jpg 1x, 
+                                 images/portfolio/ourplant@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="images/portfolio/careshare.jpg" 
+                         srcset="images/portfolio/careshare.jpg 1x, 
+                                 images/portfolio/careshare@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="images/portfolio/openmap.jpg" 
+                         srcset="images/portfolio/openmap.jpg 1x, 
+                                 images/portfolio/openmap@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/portfolio/senapul.jpg" 
+                         srcset="images/portfolio/senapul.jpg 1x, 
+                                 images/portfolio/senapul@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-ourplant.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>OurPlant</h5>
+                    <p class="resume-block__header-meta">Planterior information sharing web service that pursues an eco-friendly lifestyle.</p>
+                    <p>
+                        In the case of planterior, there is a large amount of information that is required. 
+                        Because not only simple interior information but also information about plants must be considered. 
+                        However, the existing interior information sharing service could not collect plant interior information separately and could not find them together.
+                    </p>
+                    <p>
+                        OurPlant is a community web service specialized at planterior and it actually deployed and operated for six months.
+                        It mainly features sharing interior information / searching plant information / Q&A bulletin board about gardening / like and follow.
+                    </p>
+                    <strong>My Role</strong>
+                    <li>Team Leader</li>
+                    <li>Planned Project and Designed Architecture</li>
+                    <li>Established Project Development Tasks and Roadmap</li>
+                    <li>Built Wireframe</li>
+                    <li>Collected Plant Data Using Crawling</li>
+                    <li>Developed Automatic Search Completion and Image Lazyload using JQuery</li>
+                    <li>Developed KakaoTalk Sharing Feature using JavaScript</li>
+                    <li>Developed Automatic Logout</li>
+                    <li>Deployed the Application and Managed Server and Database (AWS EC2, RDS)</li>
+                    <li>Managed Domain connection</li>
+                    <li>Created and Managed Domain Mail (AWS SES)</li>
                 </div>
-                <div class="about-li" style="margin-right: 3vh;">
-                    <span class="about-li"><img src="./images/github.png" width=20vh></span>
-                    <a href="https://github.com/s-jiun"><h4>https://github.com/s-jiun</h4></a>
+    
+                <a href="https://github.com/s-jiun/gardener" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-careshare.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>CareShare</h5>
+                    <p class="resume-block__header-meta">Medical aid sharing platform for the disabled and the elderly (23rd E-Daily Economic Universiade winning project)</p>
+                    <p>
+                        As of 2020, the number of registered disabled people is 2.62 million, and as of 2021, the number of elderly people aged 65 or older is 8.53 million. 
+                        This is the story of our country now. Most of them need medical assistive devices for their daily lives, but due to the high price range of medical aids, many people need support to use them. 
+                        However, there are many people who are not getting medical aids support service because they do not know how to apply.
+                    </p>
+                    <p>
+                        CareShare is a platform designed for them. It aims to reduce the financial burden of using unused medical aids by renting, sharing, and trading. 
+                        It also includes functions such as collecting information about medical support services and comparing prices of medical aids on the market.
+                    </p>
+                    <strong>My Role</strong>
+                    <li>Team Leader</li>
+                    <li>Planned Project and Designed Architecture</li>
+                    <li>Developed Membership Registration Feature and Membership Modification Feature</li>
+                    <li>Developed Social Login</li>
                 </div>
-                <div class="about-li" style="margin-right: 3vh;">
-                    <span class="about-li"><img src="./images/writing.png" width=20vh></span>
-                    <a href="https://blog.naver.com/747miriyam"><h4>https://blog.naver.com/747miriyam</h4></a>
+    
+                <a href="https://github.com/s-jiun/CareShare" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-senapul.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Senapul</h5>
+                    <p class="resume-block__header-meta">Mobile app for managing gardening logs (9th conference of TAVE winning project)</p>
+                    <p>
+                        Recently, as external activities have decreased due to COVID-19, interest in pets and pet plants has increased. 
+                        However, it was difficult to raise plants because they has different water cycles and care precautions depending on the plant type.
+                    </p>
+                    <p>
+                        Senapul remembers the watering cycle for each plant and sends a notification to user when to water the plant. 
+                        It also developed to help plant keepers with the ability to write and manage plant diaries and share them with other users.
+                    </p>
+                    <strong>My Role</strong>
+                    <li>Team Leader</li>
+                    <li>Planned Project and Designed Architecture</li>
+                    <li>Established Project Development Tasks and Roadmap</li>
+                    <li>Built Wireframe</li>
+                    <li>Wrote API Statement</li>
+                    <li>Developed Like/Unlike Feature and Membership Withdrawal Feature</li>
+                    <li>Developed Plant Diary Discovery Feed</li>
                 </div>
+    
+                <a href="https://github.com/s-jiun/TAVE_9_server" class="modal-popup__details">Project link</a>
             </div>
-            <br />
-            <br />
+        </div> <!-- end modal -->
 
-            <h1><a name="Project1">Project 1. OurPlant</a></h1>
-            <br />
-            <h2>" 플랜테리어 정보를 모아볼 수 있는 커뮤니티형 웹 서비스 "</h2>
-            <br />
-            <h3>💡 개발 동기</h3>
-            <p> 
-                최근 인테리어 시장의 성장, 코로나 블루 등으로 인해 플랜테리어와 반려 식물에 대한 관심이 높아지고 있습니다. 
-                하지만 현재 서비스되고 있는 인테리어 커뮤니티들은 식물 정보를 모아보기 어렵거나 플랜테리어 사진만을 따로 모아 볼 수가 없는 등 플랜테리어 정보를 모아보기에 불편함이 많습니다. 
-                저희 OurPlant는 이러한 불편함을 해소하고자 개발된 서비스입니다.
-            </p>
-            <img src="./images/OurPlant1.png" class="align-left slide-in" width="80%">
-            <br />
-            <h3>
-                🤯 주요 개발 이슈
-            </h3>
-            <p style="font-weight: bold;">문제 상황</p>
-            <p>
-                처음에 시험적으로 배포했을 당시에 'Freenom'에서 무료 도메인을 도메인을 받아 배포했었는데, 가비아에서 정식 도메인을 구입하여 다시 연결하는 과정에서 문제가 발생했었습니다.
-            </p>
-            <br />
-            <p style="font-weight: bold;">해결 과정</p>
-            <p>
-                처음에는 도메인 연결이 되지 않는 이유를 몰라 굉장히 고생을 했습니다. 
-                비슷한 케이스의 오류들을 계속 구글링하고 서버를 뜯어보는 과정에서 NginX server파일에 문제가 생긴 것이라는 생각이 들었고, 해당 파일을 분석해보았습니다.
-                그 결과 기존에 도메인 연결을 끊고 새로 구입한 도메인을 연결하는 과정에서 두 도메인의 https 인증서가 충돌하여 Certbot이 인증서를 잘못된 위치에 삽입한 것이 문제였음을 알게 되었습니다.
-                기존의 인증서를 삭제하고 새로운 인증서의 위치를 알맞게 고쳐주자 도메인이 정상적으로 연결되었습니다.
-            </p>
-            <img src="./images/OurPlant2.png" class="align-right slide-in" width="80%">
-            <br />
-            <h3>
-                ⚙️ OurPlant 주요 기능
-            </h3>
-            <div style="display: flex; justify-content: space-around;">
-                <ul>
-                    <li> 새 게시글 작성, 본인 게시글 수정 및 삭제</li>
-                    <li> 댓글, 대댓글 (댓글 삭제는 댓글이 달린 게시글 작성자 혹은 댓글 작성자만 가능)</li>
-                    <li> 게시글 좋아요</li>
-                    <li> 검색어 태그 기능(+ 태그별 게시글 모아보기 가능)</li>
-                    <li> SNS 공유하기 (Kakao, Facebook, Twitter)</li>
-                    <li> 팔로우 기능</li>
-                    <li> 팔로우한 유저 게시글 모아보기</li>
-                    <li> 식물 검색 (+ 자동 완성 기능, 양육 난이도별 필터링 기능)</li>
-                    <li> 식물 스크랩</li>
-                    <li> 식물 위키 (예정)</li>
-                    <li> 질문 게시판</li>
-                </ul>
-                <ul>
-                    <li> 공지사항, 카드뉴스, 이벤트 페이지</li>
-                    <li> 유저 검색 기능</li>
-                    <li> 활동량에 따른 유저 등급 상승</li>
-                    <li> 좋아요한 게시글 모아보기</li>
-                    <li> 나의 반려 식물 등록 기능</li>
-                    <li> 내가 작성한 게시글 모아보기</li>
-                    <li> 팔로워, 팔로잉 현황 확인</li>
-                    <li> 프로필 수정, 회원정보 수정</li>
-                    <li> 네이버, 카카오, 구글 소셜 로그인</li>
-                    <li> 비밀번호 분실 시 메일 인증 후 재설정</li>
-                </ul>
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-openmap.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>OpenMap</h5>
+                    <p class="resume-block__header-meta">Web service that shows the status of restaurants, cafes, and hospitals around users.</p>
+                    <p>
+                        OpenMap is a project conducted while I was taking the "Server System Construction and Practice" course in the spring semester of 2022 at Sungshin Women's University. 
+                        Until now, the map services has shown companies near the user, but it was difficult to users to immediately recognize whether the company is opened or closed.
+                    </p>
+                    <p>
+                        OpenMap shows the companies near you, but also the marker colors are different for each company that is open, holiday, and closed. 
+                        Other features include registering favorite companies and searching with filters.
+                    </p>
+                    <strong>My Role</strong>
+                    <li>Team Leader</li>
+                    <li>Planned Project and Designed Architecture</li>
+                    <li>Established Project Development Tasks and Roadmap</li>
+                    <li>Built Wireframe</li>
+                    <li>Collected Company Data Near Sungshin Women’s University from Public Data Portal</li>
+                    <li>Connected Kakao Map API</li>
+                    <li>Developed Search Filter and View of Business Detail</li>
+                    <li>Developed MyPlace Registration Feature and Custom Markers by Business Hour</li>
+                </div>
+    
+                <a href="https://github.com/s-jiun/OpenMap" class="modal-popup__details">Project link</a>
             </div>
-            <img src="./images/OurPlant3.png" class="align-left slide-in" width="80%">
-            <br />
-            <h3>
-                ✋ My Role
-            </h3>
-            <div style="display: flex; justify-content: space-around;">
-                <ul>
-                    <li> 프로젝트 기획 및 아키텍처 설계</li>
-                    <li> 프로젝트 개발 과제 설정 및 로드맵 수립</li>
-                    <li> Django MTV 패턴 설계</li>
-                    <li> 크롤링 데이터 수집</li>
-                    <li> JQuery 기반의 검색어 자동 완성 기능 구현</li>
-                    <li> 이미지 lazyload 구현</li>
-                </ul>
-                <ul>
-                    <li> 비동기 통신 설계</li>
-                    <li> 카카오톡 공유하기 기능 개발</li>
-                    <li> DB 관리</li>
-                    <li> AWS 배포 및 서버 관리</li>
-                    <li> 도메인 연결 관리</li>
-                </ul>
-            </div>
-            <img src="./images/OurPlant4.png" class="align-right slide-in" width="80%">
-            <br />
-            <h3>
-                📖 사용된 라이브러리
-            </h3>
-            <div style="display: flex; justify-content: space-around;">
-                <ul>
-                    <li> BeautifulSoup4</li>
-                    <li> CKeditor</li>
-                    <li> Django Environ</li>
-                    <li> Pilkit</li>
-                    <li> ImageKit</li>
-                </ul>
-                <ul>
-                    <li> Django Social Share</li>
-                    <li> Pillow</li>
-                    <li> Django Taggit</li>
-                    <li> WhiteNoise</li>
-                    <li> JQuery</li>
+        </div> <!-- end modal -->
+
+    </section> <!-- end s-portfolio -->
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="https://www.instagram.com/ss_jiun/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/s-jiun"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://blog.naver.com/747miriyam"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
 
-            <br />
-            <h3>
-                💻 개발 언어 및 Tool
-            </h3>
-            <p>
-                Front-End: HTML, CSS, JavaScript, BootStrap
-            </p>
-            <p>
-                Back-End: Python, SQLite3 (현재 AWS RDS MySQL로 교체 중)
-            </p>
-            <p>
-                Framework: Django
-            </p>
-            <p>
-                API: 네이버 로그인 API, 카카오 로그인 API, 카카오 링크 API
-            </p>
-            <br />
-            <h3>
-                🌐 서비스 도메인 및 프로젝트 GitHub
-            </h3>
-            <a href="https://ourplant.kr/"><p>https://ourplant.kr/</p></a>
-            <a href="https://github.com/s-jiun/gardener"><p>https://github.com/s-jiun/gardener</p></a>
-            <br />
-            <h3>
-                ⚠️ 서비스 접속 시 유의사항
-            </h3>
-            <p>
-                OurPlant는 아직 개발 중인 서비스입니다. 
-                때문에 소셜 로그인의 경우 네이버는 아직 사이트 검수를 받지 못해 이용할 수 없고, 카카오의 경우 사업자등록번호가 없어 아직 사용하실 수 없습니다.
-                소셜 로그인을 테스트해보고 싶으시다면 구글 로그인을 이용해주시기 바랍니다.
-            </p>
-            <br />
-            <br />
-
-            <h1><a name="Project2">Project 2. CareShare</a></h1>
-            <br />
-            <h2>" 사회적 약자 계층을 위한 보조기기 공유 플랫폼 "</h2>
-            <br />
-            <h2>💡 개발 동기</h2>
-            <p>
-                보조기기를 필수적으로 사용하는 중복 장애인의 수는 지난 5년 동안 3만 명이 증가했고 고령 인구의 수도 계속 늘고 있습니다. 
-                하지만 보조기기 지원 사업의 수는 매년 300건씩 줄고 있는 것이 현실입니다. <br/>
-                'CareShare'는, 그동안 보조기기를 이용하던 사람들이 공통적으로 겪었던 어려움을 해소해주는 플랫폼 아이디어입니다. 
-                사용하지 않는 보조기기를 서로 대여해주거나 나눔/중고거래하여 보조기기 이용 가격을 낮추고, 산발적으로 흩어져 있고 정보량도 적었던 지원사업 정보를 한 눈에 모아볼 수 있도록 합니다.
-                또한 보조기기 판매 업체의 가격 비교를 통해 보조기기를 조금이나마 합리적인 가격으로 구입할 수 있도록 지원합니다.
-                이를 통해 그동안 거래량이 높지 않았던 보조기기 중고거래의 거래량을 높이고 취약 계층을 위한 지역사회 커뮤니티 조성에 보탬이 되는 것이 'CareShare'의 궁극적인 목적입니다.
-            </p>
-            <img src="./images/CareShare1.png" class="align-left slide-in" width="80%">
-            <br />
-            <h3>
-                ⚙️ CareShare 주요 기능
-            </h3>
-            <div style="display: flex; justify-content: space-around;">
-                <ul>
-                    <li> 보조기기 중고거래/나눔/대여</li>
-                    <li> 채팅 기능 (+ 안심 번호로 통화하기 기능)</li>
-                    <li> 전국의 보조기기 지원 사업 모아보기 (중앙보조기기센터에 등록된 지원사업 크롤링)</li>
-                    <li> 보조기기 판매 업체 가격 비교</li>
-                    <li> 찜하기 기능(스크랩)</li>
-                </ul>
-                <ul>
-                    <li> 대여 보증금 관리(에스크로 서비스)</li>
-                    <li> 대여 내역, 거래 내역 확인</li>
-                    <li> 반납 일시, 회수 일시 푸시 알림</li>
-                    <li> 유저 등급 산정</li>
-                    <li> 소셜 로그인</li>
-                </ul>
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Ceevee 2021</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
             </div>
-
-            <img src="./images/CareShare2.png" class="align-right slide-in" width="80%">
-            <br />
-            <h3>
-                ✋ My Role
-            </h3>
-            <ul>
-                <li> 아이디어 기획</li>
-            </ul>
-            <img src="./images/CareShare3.png" class="align-left slide-in" width="80%">
-            <br />
-            <h3>
-                💛 CareShare는...
-            </h3>
-            <p>
-                CareShare는 실재 개발이 진행된 프로젝트는 아닙니다. 
-                아이디어 디벨롭까지 진행 후 공모전에 출품했으며, 제 23회 경제유니버시아드에서 산업 부문 최우수상을 수상하였습니다. 
-                'CareShare'의 경우 결제 시스템까지 구현해야 하기 때문에 가볍게 진행할 수 있는 프로젝트가 아니라 판단했고, 나중에 여건이 된다면 개발해보고 싶은 서비스입니다.
-            </p>
-            <p>
-                + 최근 간단하게 결제 시스템을 테스트 형식으로 제작해볼 수 있는 API가 나와있다고 하여 나중에 한 번 제작해보려고 합니다!
-            </p>
-            <img src="./images/CareShare4.png" class="align-right slide-in" width="80%">
         </div>
-    </div>
 
-    <script src="./javascripts/nav_animation.js"></script>
-    <script src="./javascripts/img_slide.js"></script>
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
