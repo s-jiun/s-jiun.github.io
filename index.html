@@ -75,7 +75,7 @@
                     <h1>I'm Jiun Seo.</h1>
 
                     <h3>
-                    I'm a <span>Full Stack Developer</span> and <span>Team Leader</span> trying to write high-readable code and
+                    I'm a <span>Backend Developer</span> trying to write high-readable code and
                     effective product with high quality for every users.
                     </h3>
 
@@ -112,17 +112,18 @@
             <div class="column large-9 tab-12 s-about__content">
                 <h3>About Me</h3>
                 <p>
-                    Hello, I'm Seo Jiun, a student who is interested in developing services that contribute to improving the public interest of society. 
-                    In the meantime, I led various application development projects and worked as a development PM and Backend developer. 
-                    In addition, the medical aids sharing platform for the disabled and the elderly, "CareShare", was awarded at the 23rd E-Daily Economic Universiade Contest. 
-                    Now I’m currently focusing on studies as a Presidential Scientific Scholarship student.
+                    I am in charge of developing the backend of navigation content for more than 60 countries around the world, 
+                    including India, Asia-Pacific, and the Middle East, in Hyundai AutoEver's Global Contents Platform Development team. 
+                    It has operated a Master Contents Provider (MCP) server in India, which records an average of about 30 million traffic per day, 
+                    and is currently leading the design of a global Content Update Service (CUS) server, 
+                    which is expected to generate about 400 million traffic per day when it is fully opened in the future.
                 </p>
                 <p>
-                    I am interested in writing highly readable code. 
-                    Of course, I still lack a lot of skills, but I always try to consider the readability of the code as well as the development of  
-                    it’s functions while writing the code. I'm trying to spend time to refactor the code regularly with my team members while working on the project.
-                    Also, I think it's important to get feedback and develop myself through it. No matter how simple a project or plan is, I always get feedback, 
-                    and I feel great pleasure when I find new perspectives that I haven't considered.
+                    My strength is the attitude of focusing on securing stability in large environments. 
+                    To respond to rapid traffic fluctuations in servers in India, we introduced a circuit breaker library to prevent 
+                    chain failures, and redesigned the caching logic for load distribution in Redis to increase the stability of cache servers 
+                    and significantly reduce the failure rate. We also transferred Asia-Pacific on-premises servers to the AWS cloud, 
+                    built a CI/CD pipeline based on Jenkins, Docker, and Kubernetes, and developed understanding and operational capabilities across the infrastructure.
                 </p>
 
                 <hr>
@@ -133,7 +134,7 @@
     
                         <p>
                         Jiun Seo <br>
-                        Sungshin Women's University <br>
+                        Hyundai Autoever <br>
                         <a href="tel:+821075333498">+82 010-7533-3498</a> <br>
                         <a href="mailto:jiun48562@gmail.com">jiun48562@gmail.com</a>
                         </p>
@@ -185,20 +186,16 @@
                 <div class="resume-block">
                     <strong>Language</strong>
                     <p>
-                    JAVA, Python, C, C++, Javascript
-                    </p>
-                    <strong>Frontend</strong>
-                    <p>
-                    React.js
+                    JAVA, Python, Javascript
                     </p>
                     <strong>Backend</strong>
                     <p>
                         AWS(EC2, RDS, SES, Lambda, S3, Route53, EKS, ElastiCache), GCP(Compute Engine, GKE), NginX, Node.js, 
-                        Django, Springboot, Docker, Jenkins, Kubernetes, Firebase, ReactNative
+                        Django, Springboot, Docker, Jenkins, Kubernetes, FastAPI
                     </p>
                     <strong>Database</strong>
                     <p>
-                        MySQL, Redis, MongoDB, PostgreSQL
+                        MySQL, Redis, MongoDB, PostgreSQL, Qdrant
                     </p>
                 </div> <!-- end resume-block -->
 
@@ -512,14 +509,6 @@
 
             <div class="column folio-item">
                 <a href="#modal-02" class="folio-item__thumb">
-                    <img src="images/portfolio/careshare.jpg" 
-                         srcset="images/portfolio/careshare.jpg 1x, 
-                                 images/portfolio/careshare@2x.jpg 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item">
-                <a href="#modal-03" class="folio-item__thumb">
                     <img src="images/portfolio/openmap.jpg" 
                          srcset="images/portfolio/openmap.jpg 1x, 
                                  images/portfolio/openmap@2x.jpg 2x" alt="">
@@ -527,10 +516,18 @@
             </div> <!-- end folio-item -->
 
             <div class="column folio-item">
-                <a href="#modal-04" class="folio-item__thumb">
+                <a href="#modal-03" class="folio-item__thumb">
                     <img src="images/portfolio/senapul.jpg" 
                          srcset="images/portfolio/senapul.jpg 1x, 
                                  images/portfolio/senapul@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/portfolio/careshare.jpg" 
+                         srcset="images/portfolio/careshare.jpg 1x, 
+                                 images/portfolio/careshare@2x.jpg 2x" alt="">
                 </a>
             </div> <!-- end folio-item -->
         </div> <!-- end folio-list -->
@@ -582,70 +579,6 @@
 
         <div id="modal-02" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-careshare.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>CareShare</h5>
-                    <p class="resume-block__header-meta">Medical aid sharing platform for the disabled and the elderly (23rd E-Daily Economic Universiade winning project)</p>
-                    <p>
-                        As of 2020, the number of registered disabled people is 2.62 million, and as of 2021, the number of elderly people aged 65 or older is 8.53 million. 
-                        This is the reality of our country now. Most of them need medical assistive devices for their daily lives, but due to the high price range of medical aids, many people need support to use them. 
-                        However, there are many people who are not getting medical aids support service because they do not know how to apply.
-                    </p>
-                    <p>
-                        CareShare is a platform designed for them. It aims to reduce the financial burden of using unused medical aids by renting, sharing, and trading. 
-                        It also includes functions such as collecting information about medical support services and comparing prices of medical aids on the market.
-                    </p>
-                    <strong>My Role</strong>
-                    <li>Team Leader</li>
-                    <li>Planned Service and Designed Architecture</li>
-                    <li>Developed Membership Registration and Modificated Membership Information</li>
-                    <li>Developed General Login and Google Login</li>
-                </div>
-                <a href="https://github.com/s-jiun/CareShare" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-        <div id="modal-04" hidden>
-            <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-senapul.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>Senapul</h5>
-                    <p class="resume-block__header-meta">Mobile app for managing gardening logs (9th conference of TAVE winning project)</p>
-                    <p>
-                        Recently, as external activities have decreased due to COVID-19, interest in pets and pet plants has increased. 
-                        However, it was difficult to raise plants because they has different water cycles and care precautions depending on the plant type.
-                    </p>
-                    <p>
-                        Senapul remembers the watering cycle for each plant and sends a notification to user when to water the plant. 
-                        It also developed to help plant keepers with the ability to write and manage plant diaries and share them with other users.
-                    </p>
-                    <strong>My Role</strong>
-                    <li>Team Leader</li>
-                    <li>Planned Project and Designed Architecture</li>
-                    <li>Established Project Development Tasks and Roadmap</li>
-                    <li>Built Wireframe</li>
-                    <li>Wrote API Statement</li>
-                    <li>Developed Like/Unlike Feature and Membership Withdrawal Feature</li>
-                    <li>Developed Plant Diary Discovery Feed</li>
-                    <p></p>
-                    <strong>Main Development Issue</strong>
-                    <p>
-                        If you send a client request, the server sends you a response. At this time, the value returned by each function in the server is different, so the format of the response sent to the client is all different. 
-                        But as I developed it, I felt the need of unify their format. In addition, since the response format and response code were not customized, http response of 200,400,500 were basically sent, so there was no way for us to know what the actual problem was.
-                        To solve this problem, we created an exception package and created an Enum class called ErrorCode and an ErrorResponse JAVA class. 
-                        In the case of ErrorCode, it is a class that contains the response code that we customized, and we have assigned the response code that we had promised for various cases such as no token or invalid or incorrect input values. 
-                        And in the case of Error Response, it is a class with a response format set, and all responses had transmitted in the class format.
-                    </p>
-                </div>
-    
-                <a href="https://github.com/s-jiun/TAVE_9_server" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-        <div id="modal-03" hidden>
-            <div class="modal-popup">
                 <img src="images/portfolio/gallery/g-openmap.jpg" alt="" />
     
                 <div class="modal-popup__desc">
@@ -683,6 +616,70 @@
                 </div>
     
                 <a href="https://github.com/s-jiun/OpenMap" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-senapul.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Senapul</h5>
+                    <p class="resume-block__header-meta">Mobile app for managing gardening logs (9th conference of TAVE winning project)</p>
+                    <p>
+                        Recently, as external activities have decreased due to COVID-19, interest in pets and pet plants has increased. 
+                        However, it was difficult to raise plants because they has different water cycles and care precautions depending on the plant type.
+                    </p>
+                    <p>
+                        Senapul remembers the watering cycle for each plant and sends a notification to user when to water the plant. 
+                        It also developed to help plant keepers with the ability to write and manage plant diaries and share them with other users.
+                    </p>
+                    <strong>My Role</strong>
+                    <li>Team Leader</li>
+                    <li>Planned Project and Designed Architecture</li>
+                    <li>Established Project Development Tasks and Roadmap</li>
+                    <li>Built Wireframe</li>
+                    <li>Wrote API Statement</li>
+                    <li>Developed Like/Unlike Feature and Membership Withdrawal Feature</li>
+                    <li>Developed Plant Diary Discovery Feed</li>
+                    <p></p>
+                    <strong>Main Development Issue</strong>
+                    <p>
+                        If you send a client request, the server sends you a response. At this time, the value returned by each function in the server is different, so the format of the response sent to the client is all different. 
+                        But as I developed it, I felt the need of unify their format. In addition, since the response format and response code were not customized, http response of 200,400,500 were basically sent, so there was no way for us to know what the actual problem was.
+                        To solve this problem, we created an exception package and created an Enum class called ErrorCode and an ErrorResponse JAVA class. 
+                        In the case of ErrorCode, it is a class that contains the response code that we customized, and we have assigned the response code that we had promised for various cases such as no token or invalid or incorrect input values. 
+                        And in the case of Error Response, it is a class with a response format set, and all responses had transmitted in the class format.
+                    </p>
+                </div>
+    
+                <a href="https://github.com/s-jiun/TAVE_9_server" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-careshare.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>CareShare</h5>
+                    <p class="resume-block__header-meta">Medical aid sharing platform for the disabled and the elderly (23rd E-Daily Economic Universiade winning project)</p>
+                    <p>
+                        As of 2020, the number of registered disabled people is 2.62 million, and as of 2021, the number of elderly people aged 65 or older is 8.53 million. 
+                        This is the reality of our country now. Most of them need medical assistive devices for their daily lives, but due to the high price range of medical aids, many people need support to use them. 
+                        However, there are many people who are not getting medical aids support service because they do not know how to apply.
+                    </p>
+                    <p>
+                        CareShare is a platform designed for them. It aims to reduce the financial burden of using unused medical aids by renting, sharing, and trading. 
+                        It also includes functions such as collecting information about medical support services and comparing prices of medical aids on the market.
+                    </p>
+                    <strong>My Role</strong>
+                    <li>Team Leader</li>
+                    <li>Planned Service and Designed Architecture</li>
+                    <li>Developed Membership Registration and Modificated Membership Information</li>
+                    <li>Developed General Login and Google Login</li>
+                </div>
+                <a href="https://github.com/s-jiun/CareShare" class="modal-popup__details">Project link</a>
             </div>
         </div> <!-- end modal -->
 
